@@ -1,3 +1,32 @@
 {
-  "ediciones": []
+  "ediciones": [
+    {
+      "slug": "semana-2026-25",
+      "tipo": "semanal",
+      "numero": 25,
+      "anio": 2026,
+      "mes": "junio",
+      "mesClave": "2026-06",
+      "mesNombre": "Junio",
+      "rango": "15-21 jun 2026",
+      "notas": 0,
+      "html": "ediciones/semana-2026-25.html",
+      "docx": "ediciones/semana-2026-25.docx",
+      "generado": "2026-06-17T19:05:42.218Z"
+    },
+    {
+      "slug": "mes-2026-06",
+      "tipo": "mensual",
+      "numero": null,
+      "anio": 2026,
+      "mes": "junio",
+      "mesClave": "2026-06",
+      "mesNombre": "Junio",
+      "rango": "",
+      "notas": 0,
+      "html": "ediciones/mes-2026-06.html",
+      "docx": "ediciones/mes-2026-06.docx",
+      "generado": "2026-06-17T19:05:42.219Z"
+    }
+  ]
 }
