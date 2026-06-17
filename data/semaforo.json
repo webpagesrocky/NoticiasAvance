@@ -1,0 +1,17 @@
+{
+  "descripcion": "Criterios para que la IA asigne el color del semaforo a cada noticia. Puedes editar estos textos para afinar el comportamiento.",
+  "niveles": {
+    "verde": {
+      "etiqueta": "Oportunidad / positivo",
+      "criterio": "Nueva inversion, expansion, donativos, generacion de empleo, eventos o aperturas donde la institucion podria vincularse, buenas noticias economicas para la region."
+    },
+    "amarillo": {
+      "etiqueta": "Seguimiento / neutral",
+      "criterio": "Informacion de contexto, anuncios a futuro sin confirmar, indicadores mixtos, temas que conviene vigilar pero sin impacto inmediato."
+    },
+    "rojo": {
+      "etiqueta": "Alerta / riesgo",
+      "criterio": "Cierres de planta, despidos, conflictos laborales o sociales, malas noticias economicas, riesgos reputacionales o de inversion para la region."
+    }
+  }
+}

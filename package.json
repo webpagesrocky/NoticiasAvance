@@ -1,0 +1,19 @@
+{
+  "name": "avance-institucional",
+  "version": "1.0.0",
+  "description": "Boletin web semanal de monitoreo de noticias de inversion, empresas y economia de Mexicali, Tijuana y Baja California.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "node src/index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "docx": "^9.0.2",
+    "dotenv": "^16.4.5",
+    "rss-parser": "^3.13.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

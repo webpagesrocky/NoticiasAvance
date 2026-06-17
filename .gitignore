@@ -1,0 +1,16 @@
+# Llaves secretas - NUNCA subir a GitHub
+.env
+*.env
+!.env.example
+
+# Dependencias de Node
+node_modules/
+
+# Logs y temporales
+npm-debug.log*
+*.log
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
