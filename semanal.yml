@@ -1,0 +1,50 @@
+name: Avance Institucional - boletin semanal
+
+# Cuando se ejecuta:
+#  - Automatico: todos los VIERNES a las 15:00 UTC (8:00 AM hora Mexicali).
+#  - Manual: boton "Run workflow" en la pestana Actions.
+# Cada corrida genera la edicion semanal Y actualiza el consolidado del mes.
+on:
+  schedule:
+    - cron: "0 15 * * 5"
+  workflow_dispatch:
+
+# Permite que el workflow haga commit/push de los archivos generados.
+permissions:
+  contents: write
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Generar el boletin de la semana
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NEWS_PROVIDER: ${{ vars.NEWS_PROVIDER || 'gnews' }}
+        run: node src/index.js
+
+      - name: Guardar los cambios (docs/ y data/)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/ data/
+          if git diff --staged --quiet; then
+            echo "No hay cambios nuevos esta semana."
+          else
+            git commit -m "Boletin Avance Institucional: $(date -u +'Semana %V - %Y-%m-%d')"
+            git push
+          fi
