@@ -1,6 +1,20 @@
 {
   "ediciones": [
     {
+      "slug": "semana-2026-29",
+      "tipo": "semanal",
+      "numero": 29,
+      "anio": 2026,
+      "mes": "julio",
+      "mesClave": "2026-07",
+      "mesNombre": "Julio",
+      "rango": "13-19 jul 2026",
+      "notas": 0,
+      "html": "ediciones/semana-2026-29.html",
+      "docx": "ediciones/semana-2026-29.docx",
+      "generado": "2026-07-17T16:17:27.252Z"
+    },
+    {
       "slug": "semana-2026-25",
       "tipo": "semanal",
       "numero": 25,
@@ -13,6 +27,20 @@
       "html": "ediciones/semana-2026-25.html",
       "docx": "ediciones/semana-2026-25.docx",
       "generado": "2026-06-17T19:05:42.218Z"
+    },
+    {
+      "slug": "mes-2026-07",
+      "tipo": "mensual",
+      "numero": null,
+      "anio": 2026,
+      "mes": "julio",
+      "mesClave": "2026-07",
+      "mesNombre": "Julio",
+      "rango": "",
+      "notas": 0,
+      "html": "ediciones/mes-2026-07.html",
+      "docx": "ediciones/mes-2026-07.docx",
+      "generado": "2026-07-17T16:17:27.260Z"
     },
     {
       "slug": "mes-2026-06",
