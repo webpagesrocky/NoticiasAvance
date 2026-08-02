@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
-<title>Avance Institucional · Julio 2026</title>
+<title>Avance Institucional · Avance 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -78,6 +78,20 @@ a:hover{text-decoration:underline;}
 .ediciones .et{font-weight:600;}
 .ediciones .small{font-size:.8rem; color:var(--muted);}
 
+/* Historial por mes (clic para filtrar) */
+.por-mes{margin-top:44px; border-top:3px double var(--accent); padding-top:18px;}
+.por-mes h2{font-family:"Sora",sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
+.meses-tabs{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;}
+.mes-tab{font:inherit; cursor:pointer; background:var(--paper-2); border:1px solid var(--rule); border-radius:999px;
+  padding:6px 14px; font-size:.82rem; color:var(--ink); text-transform:capitalize;}
+.mes-tab.activo{background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700;}
+.mes-panel{display:none;}
+.mes-panel.activo{display:block;}
+.mes-panel .nota{grid-template-columns:auto 1fr;}
+.mes-nota-eje{font-size:.72rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); margin:18px 0 -6px;}
+.mes-panel .nota:first-of-type{margin-top:0;}
+.mes-vacio{color:var(--muted); font-style:italic; padding:10px 0; font-size:.9rem;}
+
 footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; text-align:center; color:var(--muted); font-size:.82rem;}
 
 @media (max-width:560px){
@@ -92,8 +106,8 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
   <h1 class="titulo">Avance Institucional</h1>
   <p class="subtitulo">Resumen de noticias relevantes para direccion — Mexicali y Baja California</p>
   <div class="meta">
-    <span><strong>Resumen</strong> · Julio 2026</span>
-    <span>24 notas esta edicion</span>
+    <span><strong>Resumen</strong> · Actualizado 2 ago 2026</span>
+    <span>31 notas esta edicion</span>
   </div>
 </header>
 
@@ -105,7 +119,20 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 
 <section class="eje">
   <h2><span class="num">1</span> Filantropia y responsabilidad social</h2>
-  <p class="vacio">Sin notas esta semana.</p>
+  <article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">30 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://oem.com.mx/lavozdelafrontera/local/club-de-leones-bc-tiene-articulos-ortopedicos-para-donar-31300604" target="_blank" rel="noopener">Club de Leones BC tiene artículos ortopédicos para donar</a></h3>
+    <p>El Club de Leones de Baja California invita a la comunidad a acercarse para identificar artículos ortopédicos disponibles en donación, dirigidos a personas de escasos recursos que los necesiten.</p>
+    <div class="fuente-linea">
+      <span class="chip">La Voz de la Frontera</span>
+      <a href="https://oem.com.mx/lavozdelafrontera/local/club-de-leones-bc-tiene-articulos-ortopedicos-para-donar-31300604" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
 </section>
 <section class="eje">
   <h2><span class="num">2</span> Empresas y lideres establecidos</h2>
@@ -172,10 +199,66 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
   </div>
   <div class="col-der">
     <h3><span class="chip nuevo">NUEVO</span> <a href="https://el-mexicano.com.mx/Noticia/Mexicali/96972/Empresa-m%C3%A9dica-anuncia-expansi%C3%B3n-en-Mexicali" target="_blank" rel="noopener">Empresa médica anuncia expansión en Mexicali</a></h3>
-    <p>Una empresa del sector médico instalada en Mexicali anunció planes de expansión de sus operaciones, señal positiva para la industria de dispositivos médicos y la generación de empleo en la ciudad.</p>
+    <p>Una empresa del sector médico instalada en Mexicali (Intuitive Surgical, fabricante de instrumentos para el sistema quirúrgico da Vinci) anunció planes de expansión de sus operaciones, señal positiva para la industria de dispositivos médicos y la generación de empleo en la ciudad.</p>
     <div class="fuente-linea">
       <span class="chip">El Mexicano</span>
       <a href="https://el-mexicano.com.mx/Noticia/Mexicali/96972/Empresa-m%C3%A9dica-anuncia-expansi%C3%B3n-en-Mexicali" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">24 abr</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://mvsnoticias.com/nacional/estados/2026/4/24/intuitive-expande-imperio-medico-en-mexicali-730345.html" target="_blank" rel="noopener">Intuitive expande imperio médico en Mexicali</a></h3>
+    <p>La gobernadora Marina del Pilar Ávila inauguró el tercer complejo industrial de Intuitive en Mexicali, una planta de 440 mil pies cuadrados donde se fabrica más del 95% de los instrumentos del sistema quirúrgico da Vinci; la empresa ya sostiene cerca de 4,700 empleos directos en el estado desde su llegada en 2008.</p>
+    <div class="fuente-linea">
+      <span class="chip">MVS Noticias</span>
+      <a href="https://mvsnoticias.com/nacional/estados/2026/4/24/intuitive-expande-imperio-medico-en-mexicali-730345.html" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="fecha">27 ene</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://www.elimparcial.com/mxl/mexicali/2026/01/27/empresa-autolite-deja-a-mas-de-500-empleados-a-la-deriva-sin-indemnizacion/" target="_blank" rel="noopener">Empresa Autolite deja a más de 500 empleados a la deriva sin indemnización</a></h3>
+    <p>La maquiladora Autolite (propiedad de First Brand Groups, en quiebra) cerró operaciones en Mexicali dejando a más de 500 empleados sin indemnización ni aviso previo, lo que derivó en protestas de extrabajadores ante el Congreso estatal y aceleró la discusión legislativa contra empresas &quot;golondrinas&quot;.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mxl/mexicali/2026/01/27/empresa-autolite-deja-a-mas-de-500-empleados-a-la-deriva-sin-indemnizacion/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="fecha">8 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://expansion.mx/empresas/2026/07/08/planta-toyota-baja-california-de-simbolo-del-tlcan-a-cerrar" target="_blank" rel="noopener">La planta de Toyota en Baja California, de símbolo del TLCAN a cerrar</a></h3>
+    <p>Toyota confirmó una inversión de 3,600 mdd para ampliar su planta de Texas y trasladará gradualmente, en unos 4 años, la producción de la pickup Tacoma desde su planta de Baja California; el gobierno estatal descarta un cierre inmediato, pero el futuro de la planta tras 2030 queda sin definir.</p>
+    <div class="fuente-linea">
+      <span class="chip">Expansión</span>
+      <a href="https://expansion.mx/empresas/2026/07/08/planta-toyota-baja-california-de-simbolo-del-tlcan-a-cerrar" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="fecha">27 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://www.elimparcial.com/mundo/2026/07/27/trump-presume-que-sus-aranceles-estan-llevando-produccion-automotriz-de-mexico-y-canada-hacia-eeuu-mientras-toyota-prepara-el-traslado-de-la-tacoma-desde-baja-california/" target="_blank" rel="noopener">Trump presume que sus aranceles están llevando producción automotriz de México y Canadá hacia EEUU mientras Toyota prepara el traslado de la Tacoma desde Baja California</a></h3>
+    <p>Trump atribuyó a sus aranceles el traslado de producción automotriz de México y Canadá hacia EE. UU., citando el caso de Toyota, que prepara el traslado de la producción de la Tacoma desde Baja California a Texas; el episodio profundiza la incertidumbre sobre el futuro de la planta y sus más de 2 mil trabajadores.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mundo/2026/07/27/trump-presume-que-sus-aranceles-estan-llevando-produccion-automotriz-de-mexico-y-canada-hacia-eeuu-mientras-toyota-prepara-el-traslado-de-la-tacoma-desde-baja-california/" target="_blank" rel="noopener">Abrir noticia →</a>
     </div>
   </div>
 </article>
@@ -353,10 +436,37 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
     </div>
   </div>
 </article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">1 ago</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://pregonerobaja.com.mx/2026/08/01/abre-gobierno-de-bc-mas-de-200-opciones-de-formacion-artistica-en-los-siete-municipios/" target="_blank" rel="noopener">Abre Gobierno de BC más de 200 opciones de formación artística en los siete municipios</a></h3>
+    <p>El Gobierno de Baja California abrió más de 200 talleres, cursos y actividades de formación artística (41 gratuitos) en los siete municipios del estado, con inscripciones del 17 de agosto al 11 de septiembre en disciplinas como artes plásticas, danza, teatro, música y cine.</p>
+    <div class="fuente-linea">
+      <span class="chip">Pregonero Baja</span>
+      <a href="https://pregonerobaja.com.mx/2026/08/01/abre-gobierno-de-bc-mas-de-200-opciones-de-formacion-artistica-en-los-siete-municipios/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
 </section>
 <section class="eje">
   <h2><span class="num">5</span> Hacienda</h2>
-  <p class="vacio">Sin notas esta semana.</p>
+  <article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">25 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://oem.com.mx/lavozdelafrontera/local/estado-todavia-no-ejecuta-cobro-del-impuesto-predial-de-mexicali-tesorero-31241519" target="_blank" rel="noopener">Estado todavía no ejecuta cobro del impuesto predial de Mexicali: tesorero</a></h3>
+    <p>El tesorero municipal señaló que el Gobierno del Estado aún no ejecuta el cobro de las cerca de 30 mil claves catastrales con adeudo de impuesto predial en Mexicali que le fueron cedidas, pese a los acuerdos y módulos de recaudación anunciados previamente.</p>
+    <div class="fuente-linea">
+      <span class="chip">La Voz de la Frontera</span>
+      <a href="https://oem.com.mx/lavozdelafrontera/local/estado-todavia-no-ejecuta-cobro-del-impuesto-predial-de-mexicali-tesorero-31241519" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
 </section>
 <section class="eje">
   <h2><span class="num">6</span> Agropecuario</h2>
@@ -462,6 +572,511 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
   </div>
 </article>
 </section>
+
+<section class="por-mes">
+  <h2>Historial por mes</h2>
+  <div class="meses-tabs">
+  <button type="button" class="mes-tab activo" data-mes="2026-08">agosto 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-07">julio 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-06">junio 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-05">mayo 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-04">abril 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-03">marzo 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-01">enero 2026</button>
+  </div>
+  <div class="mes-panel activo" data-mes="2026-08">
+<div class="mes-nota-eje">Gobierno</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">1 ago</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://pregonerobaja.com.mx/2026/08/01/abre-gobierno-de-bc-mas-de-200-opciones-de-formacion-artistica-en-los-siete-municipios/" target="_blank" rel="noopener">Abre Gobierno de BC más de 200 opciones de formación artística en los siete municipios</a></h3>
+    <p>El Gobierno de Baja California abrió más de 200 talleres, cursos y actividades de formación artística (41 gratuitos) en los siete municipios del estado, con inscripciones del 17 de agosto al 11 de septiembre en disciplinas como artes plásticas, danza, teatro, música y cine.</p>
+    <div class="fuente-linea">
+      <span class="chip">Pregonero Baja</span>
+      <a href="https://pregonerobaja.com.mx/2026/08/01/abre-gobierno-de-bc-mas-de-200-opciones-de-formacion-artistica-en-los-siete-municipios/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+</div>
+<div class="mes-panel" data-mes="2026-07">
+<div class="mes-nota-eje">Filantropia y responsabilidad social</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">30 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://oem.com.mx/lavozdelafrontera/local/club-de-leones-bc-tiene-articulos-ortopedicos-para-donar-31300604" target="_blank" rel="noopener">Club de Leones BC tiene artículos ortopédicos para donar</a></h3>
+    <p>El Club de Leones de Baja California invita a la comunidad a acercarse para identificar artículos ortopédicos disponibles en donación, dirigidos a personas de escasos recursos que los necesiten.</p>
+    <div class="fuente-linea">
+      <span class="chip">La Voz de la Frontera</span>
+      <a href="https://oem.com.mx/lavozdelafrontera/local/club-de-leones-bc-tiene-articulos-ortopedicos-para-donar-31300604" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="fecha">27 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://www.elimparcial.com/mundo/2026/07/27/trump-presume-que-sus-aranceles-estan-llevando-produccion-automotriz-de-mexico-y-canada-hacia-eeuu-mientras-toyota-prepara-el-traslado-de-la-tacoma-desde-baja-california/" target="_blank" rel="noopener">Trump presume que sus aranceles están llevando producción automotriz de México y Canadá hacia EEUU mientras Toyota prepara el traslado de la Tacoma desde Baja California</a></h3>
+    <p>Trump atribuyó a sus aranceles el traslado de producción automotriz de México y Canadá hacia EE. UU., citando el caso de Toyota, que prepara el traslado de la producción de la Tacoma desde Baja California a Texas; el episodio profundiza la incertidumbre sobre el futuro de la planta y sus más de 2 mil trabajadores.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mundo/2026/07/27/trump-presume-que-sus-aranceles-estan-llevando-produccion-automotriz-de-mexico-y-canada-hacia-eeuu-mientras-toyota-prepara-el-traslado-de-la-tacoma-desde-baja-california/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Hacienda</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">25 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://oem.com.mx/lavozdelafrontera/local/estado-todavia-no-ejecuta-cobro-del-impuesto-predial-de-mexicali-tesorero-31241519" target="_blank" rel="noopener">Estado todavía no ejecuta cobro del impuesto predial de Mexicali: tesorero</a></h3>
+    <p>El tesorero municipal señaló que el Gobierno del Estado aún no ejecuta el cobro de las cerca de 30 mil claves catastrales con adeudo de impuesto predial en Mexicali que le fueron cedidas, pese a los acuerdos y módulos de recaudación anunciados previamente.</p>
+    <div class="fuente-linea">
+      <span class="chip">La Voz de la Frontera</span>
+      <a href="https://oem.com.mx/lavozdelafrontera/local/estado-todavia-no-ejecuta-cobro-del-impuesto-predial-de-mexicali-tesorero-31241519" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Gobierno</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">21 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://el-mexicano.com.mx/Noticia/Mexicali/97044/Ayuntamiento-de-Mexicali-invertir%C3%A1-20-millones-de-pesos-para-sustituir-cableado" target="_blank" rel="noopener">Ayuntamiento de Mexicali invertirá 20 millones de pesos para sustituir cableado</a></h3>
+    <p>El Ayuntamiento de Mexicali destinará cerca de 20 millones de pesos para sustituir el cableado eléctrico del Palacio Municipal, con más de 40 años de antigüedad, tras fallas recurrentes; los trabajos iniciaron en áreas prioritarias como Catastro y Recaudación.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Mexicano</span>
+      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/97044/Ayuntamiento-de-Mexicali-invertir%C3%A1-20-millones-de-pesos-para-sustituir-cableado" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">16 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://el-mexicano.com.mx/Noticia/Mexicali/96972/Empresa-m%C3%A9dica-anuncia-expansi%C3%B3n-en-Mexicali" target="_blank" rel="noopener">Empresa médica anuncia expansión en Mexicali</a></h3>
+    <p>Una empresa del sector médico instalada en Mexicali (Intuitive Surgical, fabricante de instrumentos para el sistema quirúrgico da Vinci) anunció planes de expansión de sus operaciones, señal positiva para la industria de dispositivos médicos y la generación de empleo en la ciudad.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Mexicano</span>
+      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/96972/Empresa-m%C3%A9dica-anuncia-expansi%C3%B3n-en-Mexicali" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Camaras empresariales</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">15 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://oem.com.mx/lavozdelafrontera/local/participara-index-mexicali-en-feria-de-empresas-de-aeronautica-en-inglaterra-31193556" target="_blank" rel="noopener">Participará Index Mexicali en feria de empresas de aeronáutica en Inglaterra</a></h3>
+    <p>Index Mexicali participará en la feria aeroespacial internacional de Farnborough, Inglaterra, para promover al sector aeroespacial de la ciudad, que genera cerca de 19,737 empleos en la región.</p>
+    <div class="fuente-linea">
+      <span class="chip">La Voz de la Frontera</span>
+      <a href="https://oem.com.mx/lavozdelafrontera/local/participara-index-mexicali-en-feria-de-empresas-de-aeronautica-en-inglaterra-31193556" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Camaras empresariales</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">14 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://www.indexmexicali.org.mx/publicacion/%f0%9f%a4%9d%f0%9f%93%bb-fortalecemos-alianzas-por-el-desarrollo-de-la-industria/" target="_blank" rel="noopener">Fortalecemos alianzas por el desarrollo de la industria</a></h3>
+    <p>Index Mexicali reafirmó su estrategia de fortalecer alianzas para impulsar el desarrollo de la industria maquiladora y de exportación en la región.</p>
+    <div class="fuente-linea">
+      <span class="chip">Index Mexicali</span>
+      <a href="https://www.indexmexicali.org.mx/publicacion/%f0%9f%a4%9d%f0%9f%93%bb-fortalecemos-alianzas-por-el-desarrollo-de-la-industria/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="fecha">8 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://expansion.mx/empresas/2026/07/08/planta-toyota-baja-california-de-simbolo-del-tlcan-a-cerrar" target="_blank" rel="noopener">La planta de Toyota en Baja California, de símbolo del TLCAN a cerrar</a></h3>
+    <p>Toyota confirmó una inversión de 3,600 mdd para ampliar su planta de Texas y trasladará gradualmente, en unos 4 años, la producción de la pickup Tacoma desde su planta de Baja California; el gobierno estatal descarta un cierre inmediato, pero el futuro de la planta tras 2030 queda sin definir.</p>
+    <div class="fuente-linea">
+      <span class="chip">Expansión</span>
+      <a href="https://expansion.mx/empresas/2026/07/08/planta-toyota-baja-california-de-simbolo-del-tlcan-a-cerrar" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Camaras empresariales</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">3 jul</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://el-mexicano.com.mx/Noticia/Mexicali/95391/Reducir%C3%A1n-jornada-laboral-a-trabajadores-de-la-construcci%C3%B3n-en-Mexicali:-CCE" target="_blank" rel="noopener">Reducirán jornada laboral a trabajadores de la construcción en Mexicali: CCE</a></h3>
+    <p>El CCE Mexicali impulsó la reducción de la jornada laboral hasta las 2:00 p.m. para los trabajadores de la construcción como medida preventiva ante las altas temperaturas del verano, buscando garantizar hidratación, sombra y descanso en las obras.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Mexicano</span>
+      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/95391/Reducir%C3%A1n-jornada-laboral-a-trabajadores-de-la-construcci%C3%B3n-en-Mexicali:-CCE" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+</div>
+<div class="mes-panel" data-mes="2026-06">
+<div class="mes-nota-eje">Camaras empresariales</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">23 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://zetatijuana.com/2026/06/canacintra-mexicali-reconoce-inversion-de-cfe-pero-advierte-que-los-apagones-continuaran/" target="_blank" rel="noopener">Canacintra Mexicali reconoce inversión de CFE pero advierte que los apagones continuarán</a></h3>
+    <p>Canacintra Mexicali reconoció la inversión de CFE en infraestructura eléctrica, pero advirtió que los apagones continuarán en la ciudad porque la red de distribución sigue siendo insuficiente para la demanda creciente de la industria.</p>
+    <div class="fuente-linea">
+      <span class="chip">Zeta Tijuana</span>
+      <a href="https://zetatijuana.com/2026/06/canacintra-mexicali-reconoce-inversion-de-cfe-pero-advierte-que-los-apagones-continuaran/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Camaras empresariales</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">22 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://www.elimparcial.com/mxl/mexicali/2026/06/22/canacintra-mexicali-desestima-capacidad-de-generacion-de-nueva-central-de-ciclo-combinado-hace-falta-mas-aseguran/" target="_blank" rel="noopener">Canacintra Mexicali desestima capacidad de generación de nueva central de ciclo combinado; &quot;hace falta más&quot;, aseguran</a></h3>
+    <p>Canacintra Mexicali consideró insuficiente la capacidad de generación de la nueva planta de ciclo combinado de CFE en el Valle de Mexicali y afirmó que se necesita más inversión en la red para resolver los apagones que afectan a la industria.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mxl/mexicali/2026/06/22/canacintra-mexicali-desestima-capacidad-de-generacion-de-nueva-central-de-ciclo-combinado-hace-falta-mas-aseguran/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://el-mexicano.com.mx/Noticia/Mexicali/95318/Genera-exicali-m%C3%A1s-de-19-mil-mdp-en-exportaciones" target="_blank" rel="noopener">Genera Mexicali mas de 19 mil mdp en exportaciones</a></h3>
+    <p>Mexicali registro mas de 19 mil millones de pesos en exportaciones, reflejando la fortaleza del sector industrial y maquilador local.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Mexicano</span>
+      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/95318/Genera-exicali-m%C3%A1s-de-19-mil-mdp-en-exportaciones" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://mexicaliedc.com/enfoque-de-la-industria-musical-the-namm-show/?lang=es" target="_blank" rel="noopener">Enfoque de la industria musical: The NAMM Show</a></h3>
+    <p>Empresas de Mexicali participaron en el NAMM Show, principal feria mundial de instrumentos musicales, buscando abrir mercados internacionales.</p>
+    <div class="fuente-linea">
+      <span class="chip">Mexicali EDC</span>
+      <a href="https://mexicaliedc.com/enfoque-de-la-industria-musical-the-namm-show/?lang=es" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://mexicaliedc.com/mexicali-presente-en-el-pabellon-de-mexico-en-farnborough-international-airshow-fia-2022/?lang=es" target="_blank" rel="noopener">Mexicali presente en el pabellon de Mexico en Farnborough International Airshow 2022</a></h3>
+    <p>Empresas del sector aeroespacial de Mexicali acompanaron al pabellon de Mexico en Farnborough 2022, una de las ferias aeroespaciales mas importantes del mundo.</p>
+    <div class="fuente-linea">
+      <span class="chip">Mexicali EDC</span>
+      <a href="https://mexicaliedc.com/mexicali-presente-en-el-pabellon-de-mexico-en-farnborough-international-airshow-fia-2022/?lang=es" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://oem.com.mx/elsoldetijuana/local/tijuana-alcanza-cifra-record-de-8-millones-de-pies-cuadrados-vacantes-en-naves-industriales-30535498" target="_blank" rel="noopener">Tijuana alcanza cifra record de 8 millones de pies cuadrados vacantes en naves industriales</a></h3>
+    <p>Tijuana llega a un record de 8 millones de pies cuadrados de espacio industrial vacante, una senal de alerta sobre la demanda de naves industriales en la frontera.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Sol de Tijuana</span>
+      <a href="https://oem.com.mx/elsoldetijuana/local/tijuana-alcanza-cifra-record-de-8-millones-de-pies-cuadrados-vacantes-en-naves-industriales-30535498" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Inversion entrante / expansiones</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://mexicaliedc.com/condiciones-ideales-del-nearshoring-porque-mudarse-a-mexicali/?lang=es" target="_blank" rel="noopener">Condiciones ideales del nearshoring: por que mudarse a Mexicali</a></h3>
+    <p>Mexicali EDC destaca las ventajas competitivas de la ciudad para captar inversion bajo el modelo de nearshoring: ubicacion, talento humano y conectividad logistica.</p>
+    <div class="fuente-linea">
+      <span class="chip">Mexicali EDC</span>
+      <a href="https://mexicaliedc.com/condiciones-ideales-del-nearshoring-porque-mudarse-a-mexicali/?lang=es" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Inversion entrante / expansiones</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://mexicaliedc.com/funcionarios-de-la-embajada-alemana-visitan-el-sector-industrial-de-mexicali/?lang=es" target="_blank" rel="noopener">Funcionarios de la Embajada Alemana visitan el sector industrial de Mexicali</a></h3>
+    <p>Una delegacion de la Embajada Alemana recorrio el sector industrial de Mexicali para explorar oportunidades de cooperacion bilateral e inversion.</p>
+    <div class="fuente-linea">
+      <span class="chip">Mexicali EDC</span>
+      <a href="https://mexicaliedc.com/funcionarios-de-la-embajada-alemana-visitan-el-sector-industrial-de-mexicali/?lang=es" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Inversion entrante / expansiones</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://mexicaliedc.com/footprint-inaugura-en-mexicali-la-nave-industrial-mas-grande-del-noroeste-de-mexico/?lang=es" target="_blank" rel="noopener">Footprint inaugura en Mexicali la nave industrial mas grande del noroeste de Mexico</a></h3>
+    <p>Footprint puso en operacion en Mexicali la nave industrial mas grande del noroeste del pais, reforzando el posicionamiento de la ciudad como hub de manufactura sustentable.</p>
+    <div class="fuente-linea">
+      <span class="chip">Mexicali EDC</span>
+      <a href="https://mexicaliedc.com/footprint-inaugura-en-mexicali-la-nave-industrial-mas-grande-del-noroeste-de-mexico/?lang=es" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Gobierno</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://mexicaliedc.com/iniciativa-probaja-trade-investment-inauguran-la-apertura-de-oficina-de-promocion-de-baja-california-en-silicon-valley/?lang=es" target="_blank" rel="noopener">ProBaja Trade &amp; Investment inaugura oficina de promocion de Baja California en Silicon Valley</a></h3>
+    <p>La iniciativa ProBaja Trade &amp; Investment abrio una oficina de promocion de Baja California en Silicon Valley, con el objetivo de atraer inversion del sector tecnologico.</p>
+    <div class="fuente-linea">
+      <span class="chip">Mexicali EDC</span>
+      <a href="https://mexicaliedc.com/iniciativa-probaja-trade-investment-inauguran-la-apertura-de-oficina-de-promocion-de-baja-california-en-silicon-valley/?lang=es" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Gobierno</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://el-mexicano.com.mx/Noticia/Mexicali/90236/Inicia-Gobierno-de-Mexicali-entrevistas-para-titular-del-CCSPM" target="_blank" rel="noopener">Inicia Gobierno de Mexicali entrevistas para titular del CCSPM</a></h3>
+    <p>El Gobierno de Mexicali inicio el proceso de entrevistas para designar al nuevo titular del Consejo Ciudadano de Seguridad Publica Municipal (CCSPM).</p>
+    <div class="fuente-linea">
+      <span class="chip">El Mexicano</span>
+      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/90236/Inicia-Gobierno-de-Mexicali-entrevistas-para-titular-del-CCSPM" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Gobierno</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.bajacalifornia.gob.mx/Prensa/Noticia/2275" target="_blank" rel="noopener">Gobierno de Baja California: comunicado oficial sobre acciones en curso</a></h3>
+    <p>Comunicado oficial del Gobierno del Estado sobre acciones en curso. Conviene dar seguimiento a los proximos anuncios oficiales.</p>
+    <div class="fuente-linea">
+      <span class="chip">Gobierno de Baja California</span>
+      <a href="https://www.bajacalifornia.gob.mx/Prensa/Noticia/2275" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Agropecuario</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="fecha">18 jun</span>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.gob.mx/agricultura%7Cbajacalifornia/articulos/revisan-autoridades-de-agricultura-y-fira-operacion-del-programa-cosechando-soberania" target="_blank" rel="noopener">Revisan autoridades de agricultura y FIRA operacion del programa Cosechando Soberania</a></h3>
+    <p>Autoridades agricolas federales y FIRA revisaron en Baja California la operacion del programa Cosechando Soberania, enfocado al financiamiento del campo y la autosuficiencia alimentaria.</p>
+    <div class="fuente-linea">
+      <span class="chip">Gob.mx Agricultura BC</span>
+      <a href="https://www.gob.mx/agricultura%7Cbajacalifornia/articulos/revisan-autoridades-de-agricultura-y-fira-operacion-del-programa-cosechando-soberania" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+</div>
+<div class="mes-panel" data-mes="2026-05">
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="fecha">14 may</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://www.elimparcial.com/mxl/mexicali/2026/05/14/despliegan-operativo-por-presunto-huachicol-en-empresa-transportista-de-mexicali/" target="_blank" rel="noopener">Despliegan operativo por presunto huachicol en empresa transportista de Mexicali</a></h3>
+    <p>SEDENA, la Fiscalía y personal de Pemex realizaron un cateo en las instalaciones de una empresa transportista (Comandos del Norte, Blvd. Lázaro Cárdenas/Huertas del Progreso) por presunto robo y manejo ilegal de combustible (huachicol); al momento no se reportaron detenidos ni aseguramientos. También reportado por La Voz de la Frontera.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mxl/mexicali/2026/05/14/despliegan-operativo-por-presunto-huachicol-en-empresa-transportista-de-mexicali/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">12 may</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://el-mexicano.com.mx/Noticia/Mexicali/93652/Generan-trabajadores-de-Mexicali-965-mdp-en-obra" target="_blank" rel="noopener">Generan trabajadores de Mexicali 965 mdp en obra</a></h3>
+    <p>La industria de la construcción en Mexicali generó 965 millones de pesos durante el primer bimestre de 2026, un incremento anual de 12%, con 1,560 empresas registradas ante el IMSS que emplean a 17,938 trabajadores formales.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Mexicano</span>
+      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/93652/Generan-trabajadores-de-Mexicali-965-mdp-en-obra" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+</div>
+<div class="mes-panel" data-mes="2026-04">
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">24 abr</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://mvsnoticias.com/nacional/estados/2026/4/24/intuitive-expande-imperio-medico-en-mexicali-730345.html" target="_blank" rel="noopener">Intuitive expande imperio médico en Mexicali</a></h3>
+    <p>La gobernadora Marina del Pilar Ávila inauguró el tercer complejo industrial de Intuitive en Mexicali, una planta de 440 mil pies cuadrados donde se fabrica más del 95% de los instrumentos del sistema quirúrgico da Vinci; la empresa ya sostiene cerca de 4,700 empleos directos en el estado desde su llegada en 2008.</p>
+    <div class="fuente-linea">
+      <span class="chip">MVS Noticias</span>
+      <a href="https://mvsnoticias.com/nacional/estados/2026/4/24/intuitive-expande-imperio-medico-en-mexicali-730345.html" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+</div>
+<div class="mes-panel" data-mes="2026-03">
+<div class="mes-nota-eje">Camaras empresariales</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">26 mar</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://radarbc.com/general/asume-maria-teresa-babun-villarreal-dirigencia-de-canacintra-en-mexicali/" target="_blank" rel="noopener">Asume María Teresa Babún Villarreal dirigencia de Canacintra en Mexicali</a></h3>
+    <p>María Teresa Babún Villarreal asumió la presidencia de Canacintra Mexicali para el periodo 2026-2027, la primera mujer en dirigir el organismo tras 81 años; entre sus prioridades están la seguridad, la infraestructura eléctrica y el impulso a la micro y pequeña empresa.</p>
+    <div class="fuente-linea">
+      <span class="chip">RadarBC</span>
+      <a href="https://radarbc.com/general/asume-maria-teresa-babun-villarreal-dirigencia-de-canacintra-en-mexicali/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Inversion entrante / expansiones</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="fecha">25 mar</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://el-mexicano.com.mx/Noticia/Mexicali/91709/Llega-a-Mexicali-empresa-coreana-de-bater%C3%ADas-para-autom%C3%B3viles" target="_blank" rel="noopener">Llega a Mexicali empresa coreana de baterías para automóviles</a></h3>
+    <p>El grupo surcoreano Dongwon inicia la construcción de una planta de baterías para automóviles eléctricos e híbridos en Mexicali, con una inversión de 80 millones de dólares y 350 empleos técnicos, para abastecer a armadoras como Tesla, Ford, Mercedes-Benz y Nissan. También anunciado por La Voz de la Frontera.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Mexicano</span>
+      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/91709/Llega-a-Mexicali-empresa-coreana-de-bater%C3%ADas-para-autom%C3%B3viles" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="fecha">19 mar</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://oem.com.mx/lavozdelafrontera/local/cerraron-98-empresas-en-mexicali-en-primer-el-bimestre-de-2026-29044704" target="_blank" rel="noopener">Cerraron 98 empresas en Mexicali en el primer bimestre de 2026</a></h3>
+    <p>El Centro de Estudios Económicos de Baja California (CEEBC) reportó el cierre de 98 empresas ante el IMSS en Mexicali durante el primer bimestre de 2026, casi dos cierres diarios, lo que refleja condiciones débiles en el mercado laboral local.</p>
+    <div class="fuente-linea">
+      <span class="chip">La Voz de la Frontera</span>
+      <a href="https://oem.com.mx/lavozdelafrontera/local/cerraron-98-empresas-en-mexicali-en-primer-el-bimestre-de-2026-29044704" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="fecha">16 mar</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://zetatijuana.com/2026/03/la-corrupcion-en-los-ayuntamientos-ha-generado-el-cierre-de-miles-de-empresas-senador-max-garcia/" target="_blank" rel="noopener">La corrupción en los ayuntamientos ha generado el cierre de miles de empresas: senador Max García</a></h3>
+    <p>El senador Max García reportó más de 42 mil bajas patronales en Baja California en los últimos 4 años (unas 820 empresas al mes) y atribuyó el cierre masivo de negocios a la corrupción y la extorsión en los ayuntamientos.</p>
+    <div class="fuente-linea">
+      <span class="chip">Zeta Tijuana</span>
+      <a href="https://zetatijuana.com/2026/03/la-corrupcion-en-los-ayuntamientos-ha-generado-el-cierre-de-miles-de-empresas-senador-max-garcia/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+</div>
+<div class="mes-panel" data-mes="2026-01">
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="fecha">27 ene</span>
+  </div>
+  <div class="col-der">
+    <h3><span class="chip nuevo">NUEVO</span> <a href="https://www.elimparcial.com/mxl/mexicali/2026/01/27/empresa-autolite-deja-a-mas-de-500-empleados-a-la-deriva-sin-indemnizacion/" target="_blank" rel="noopener">Empresa Autolite deja a más de 500 empleados a la deriva sin indemnización</a></h3>
+    <p>La maquiladora Autolite (propiedad de First Brand Groups, en quiebra) cerró operaciones en Mexicali dejando a más de 500 empleados sin indemnización ni aviso previo, lo que derivó en protestas de extrabajadores ante el Congreso estatal y aceleró la discusión legislativa contra empresas &quot;golondrinas&quot;.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mxl/mexicali/2026/01/27/empresa-autolite-deja-a-mas-de-500-empleados-a-la-deriva-sin-indemnizacion/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+</div>
+</section>
+<script>
+(function(){
+  var tabs = document.querySelectorAll(".mes-tab");
+  var paneles = document.querySelectorAll(".mes-panel");
+  tabs.forEach(function(tab){
+    tab.addEventListener("click", function(){
+      var mes = tab.getAttribute("data-mes");
+      tabs.forEach(function(t){ t.classList.toggle("activo", t === tab); });
+      paneles.forEach(function(p){ p.classList.toggle("activo", p.getAttribute("data-mes") === mes); });
+    });
+  });
+})();
+</script>
 
 <footer>
   <p>Avance Institucional — documento interno de monitoreo. Generado automaticamente.</p>
