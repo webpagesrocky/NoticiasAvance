@@ -1,6 +1,20 @@
 {
   "ediciones": [
     {
+      "slug": "semana-2026-32",
+      "tipo": "semanal",
+      "numero": 32,
+      "anio": 2026,
+      "mes": "agosto",
+      "mesClave": "2026-08",
+      "mesNombre": "Agosto",
+      "rango": "3-9 ago 2026",
+      "notas": 0,
+      "html": "ediciones/semana-2026-32.html",
+      "docx": "ediciones/semana-2026-32.docx",
+      "generado": "2026-08-07T15:58:38.660Z"
+    },
+    {
       "slug": "semana-2026-31",
       "tipo": "semanal",
       "numero": 31,
@@ -41,6 +55,20 @@
       "html": "ediciones/semana-2026-25.html",
       "docx": "ediciones/semana-2026-25.docx",
       "generado": "2026-06-17T19:05:42.218Z"
+    },
+    {
+      "slug": "mes-2026-08",
+      "tipo": "mensual",
+      "numero": null,
+      "anio": 2026,
+      "mes": "agosto",
+      "mesClave": "2026-08",
+      "mesNombre": "Agosto",
+      "rango": "",
+      "notas": 0,
+      "html": "ediciones/mes-2026-08.html",
+      "docx": "ediciones/mes-2026-08.docx",
+      "generado": "2026-08-07T15:58:38.667Z"
     },
     {
       "slug": "mes-2026-07",
